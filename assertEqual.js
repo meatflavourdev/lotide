@@ -1,6 +1,6 @@
 // Function Implementation
 const assertEqual = function(actual, expected) {
-  if(actual === expected){
+  if (actual === expected) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🟥 Assertion Failed: ${actual} === ${expected}`);
@@ -15,7 +15,6 @@ assertEqual(10.0, 10.0);
 assertEqual(12e3, 12e3);
 assertEqual(true, true);
 assertEqual(undefined, undefined);
-
 
 assertEqual("String Not Identical", "String");
 assertEqual("abc", "def");
