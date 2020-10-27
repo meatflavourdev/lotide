@@ -20,7 +20,6 @@ const assertEqual = function(actual, expected) {
  */
 const tail = function(arr) {
   const [firstElm, ...tail] = arr;
-  console.log(`firstElm: ${firstElm} tail: ${tail}`);
   return tail;
 };
 
@@ -41,17 +40,15 @@ assertEqual(test2.length, 3); // original array should still have 3 elements!
 // Test Case 3: Array with one element
 console.log(`Test 3`);
 const test3 = tail(["Hello"]);
-assertEqual(test3.length, 0); // ensure we get back two elements
+assertEqual(test3.length, 0); // Ensure returned array has length of 0
 
 // Test Case 4: Empty Array
 console.log(`Test 4`);
 const test4 = [];
-tail(test4); // no need to capture the return value since we are not checking it
-assertEqual(test4.length, 0); // original array should still have 3 elements!
+tail(test4);
+assertEqual(test4.length, 0); // Ensure returned array has length of 0
 
-// Test Case 5: undefined
+// Test Case 5: Array with one undefined element
 console.log(`Test 5`);
-const test5 = [undefined];
-tail(test5); // no need to capture the return value since we are not checking it
-console.log(test5);
-assertEqual(test5.length, 0); // original array should still have 3 elements!
+const test5 = tail([undefined]); 
+assertEqual(test5.length, 0); // Ensure returned array has length of 0
