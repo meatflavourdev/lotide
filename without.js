@@ -39,5 +39,28 @@ const without = function(source, itemsToRemove) {
   return filtered;
 };
 
+// Ensure original array is not modified
+let originalArr = [1, 2, 3];
+without(originalArr, [1]) // => [2, 3]
+assertArraysEqual(originalArr, [1, 2, 3]);
+
+//Weird arrays
+assertArraysEqual(without([undefined], []), [undefined]);
+assertArraysEqual(without([undefined], [undefined]), []);
+
+// Empty arrays
+assertArraysEqual(without([], []), []);
+assertArraysEqual(without([1], []), [1]);
+assertArraysEqual(without([], [1]), []);
+
+// Single elements
+assertArraysEqual(without([1], [1]), []);
+assertArraysEqual(without([1], [2]), [1]);
+
+// Multiple elements
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => [2, 3]
+
+// Mixed types
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1", "2"]
+assertArraysEqual(without(["1", 2, 1.34, "string"], [1, 1.34, "string"]), ["1", 2]);
+assertArraysEqual(without(["", 2, 1.34, "string"], ["", 1.34, "string"]), [2]);
