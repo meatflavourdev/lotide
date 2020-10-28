@@ -19,7 +19,7 @@ const assertEqual = function(actual, expected) {
  * @return {*[]} The tail of the array, that is, an array with every element but the first
  */
 const tail = function(arr) {
-  const [firstElm, ...tail] = arr;
+  const [, ...tail] = arr;
   return tail;
 };
 
@@ -50,5 +50,5 @@ assertEqual(test4.length, 0); // Ensure returned array has length of 0
 
 // Test Case 5: Array with one undefined element
 console.log(`Test 5`);
-const test5 = tail([undefined]); 
+const test5 = tail([undefined]);
 assertEqual(test5.length, 0); // Ensure returned array has length of 0
