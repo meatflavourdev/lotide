@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-/** 
+/**
  * Counts the number of strings in an array as specified by the truthiness of keys given by itemsToCount
  * @param  {string[]} allItems an array of strings that we need to look through
  * @param  {Object} itemsToCount an object specifying what to count
@@ -22,18 +22,18 @@ const countOnly = function(allItems, itemsToCount) {
   // by the truthiness of each element of itemsToCount
   let itemsArr = [];
   for (const [key, value] of Object.entries(itemsToCount)) {
-    if(value) itemsArr.push(key);
+    if (value) itemsArr.push(key);
   }
 
   // Loop through each item in allItems
   let results = [];
   for (const item of allItems) {
-    if(itemsArr.includes(item)){
+    if (itemsArr.includes(item)) {
       results[item] = (!results[item]) ? 1 : results[item] + 1;
-    } 
+    }
   }
   return {};
-}
+};
 
 const firstNames = [
   "Karl",
