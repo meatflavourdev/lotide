@@ -28,6 +28,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+// @todo jsdoc this function!
 const letterPositions = function(sentence) {
   const results = {};
   for (const [key, value] of Object.entries(sentence)) {

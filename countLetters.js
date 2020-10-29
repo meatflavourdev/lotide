@@ -44,6 +44,7 @@ const expected1 =
   ":": 1,
 };
 
+// @todo jsdoc this function!
 const test1 = countLetter('this StrINGdfdsD""D345 3437:');
 for (const [key, value] of Object.entries(test1)) {
   assertEqual(value, expected1[key]);
