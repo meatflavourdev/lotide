@@ -36,7 +36,7 @@ const eqArrays = function(actual, expected) {
  */
 const eqObjects = function(actual, expected) {
   for (const [key, value] of Object.entries(expected)) {
-    if(Array.isArray(value)){
+    if (Array.isArray(value)) {
       if (!eqArrays(value, actual[key])) return false;
     } else {
       if (actual[key] !== value) return false;
