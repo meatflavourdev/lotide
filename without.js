@@ -46,7 +46,7 @@ const without = function(source, itemsToRemove) {
 
 // Ensure original array is not modified
 let originalArr = [1, 2, 3];
-without(originalArr, [1]) // => [2, 3]
+without(originalArr, [1]); // => [2, 3]
 assertArraysEqual(originalArr, [1, 2, 3]);
 
 //Weird arrays
