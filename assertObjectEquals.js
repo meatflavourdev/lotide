@@ -1,16 +1,4 @@
 /**
- * Logs message to the console remarking on the equality of the specified parameters
- * @param  {*} actual The value to test against
- * @param  {*} expected The value to be tested
- */
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🟥 Assertion Failed: ${actual} === ${expected}`);
-  }
-};
-/**
  * Compares two shallow arrays and returns true if they contain the same elements
  * @param  {*[]} actual The array to test against
  * @param  {*[]} expected The array to be tested
@@ -61,12 +49,12 @@ const assertObjectsEqual = function(actual, expected) {
 
 
 // Tests
-/* assertObjectsEqual({}, {});
+assertObjectsEqual({}, {});
 assertObjectsEqual({a: "a"}, {a: "a"});
 assertObjectsEqual({a: 1, b: 2, c: 3}, {a: 1, b: 2, c: 3});
-assertObjectsEqual({"1": 1, "2": 2, "3": 3}, {"1": 1, "2": 2, "3": 3}); */
+assertObjectsEqual({"1": 1, "2": 2, "3": 3}, {"1": 1, "2": 2, "3": 3});
 console.log("---");
-//assertObjectsEqual({}, {a: 1, b: 2, c: 3});
+assertObjectsEqual({}, {a: 1, b: 2, c: 3});
 assertObjectsEqual({a: 1, b: 2, c: 3}, {});
 assertObjectsEqual({a: 1, b: 2, c: 3}, {a: 2, b: 2, c: 3});
 assertObjectsEqual({"1": 1, "2": 2, "3": 3}, {"1": "d", "2": 2, "3": 3});
