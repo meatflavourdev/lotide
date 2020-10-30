@@ -36,13 +36,3 @@ assertEqual(test2, undefined);
 
 const test3 = findKey({}, x => x.stars === 2) // => "noma"
 assertEqual(test3, undefined);
-
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
-
-/* assertEqual(findKeyByValue(bestTVShowsByGenre, "foo"), undefined);
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); */
