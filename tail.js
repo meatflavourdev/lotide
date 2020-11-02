@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 /**
  * Returns a shallow copy of the given array without the first element
  * When passed a one-dimensional array, the tail is copied and returned.
