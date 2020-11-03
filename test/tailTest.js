@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const tail = require('../tail');
 
-describe("#head", () => {
+describe("#tail", () => {
   it("Returns an array of length 2 when passed an array of length 3", () => {
     const test1 = tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(test1.length, 2);
