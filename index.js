@@ -1,6 +1,10 @@
 // index.js
+const head = require("./head");
+const middle = require("./middle");
+const tail = require("./tail");
+
 module.exports = {
-  head: require("./head"),
-  tail: require("./tail"),
-  middle: require("./middle"),
+  head,
+  tail,
+  middle
 };
