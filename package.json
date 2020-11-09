@@ -1,5 +1,5 @@
 {
-  "name": "@meatfavourdev/lotide",
+  "name": "@meatflavourdev/lotide",
   "version": "1.0.0",
   "description": "A mini clone of the Lodash library. BEWARE: This library was published for learning purposes. It is not intended for use in production-grade software.",
   "main": "index.js",
@@ -16,9 +16,9 @@
   "author": "Jeremy Dombrowski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jfelixdev/lotide/issues"
+    "url": "https://github.com/meatflavourdev/lotide/issues"
   },
-  "homepage": "https://github.com/jfelixdev/lotide#readme",
+  "homepage": "https://github.com/meatflavourdev/lotide#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.0"
