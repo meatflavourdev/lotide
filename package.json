@@ -21,6 +21,6 @@
   "homepage": "https://github.com/meatflavourdev/lotide#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.2.0"
+    "mocha": "^10.2.0"
   }
 }
